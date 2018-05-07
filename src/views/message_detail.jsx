@@ -14,7 +14,7 @@ export default class MessageDetail extends Component {
 
         //读取请求路径中的 id参数值
         const id = +this.props.match.params.id
-        //find()方法，获取数组中满足条件的第一个元素
+        //find()方法，获取数组中满足条件(返回值为true)的第一个元素
         const messageDetail = allMessageDetails.find((detail, index) => id===detail.id)
         return (
             <ul>
